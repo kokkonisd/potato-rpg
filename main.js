@@ -122,7 +122,7 @@ function handleTrade ()
         return;
     }
 
-    updateScores(0, -POTATOES_FOR_ONE_ORC, -1);
+    updateScores(0, -POTATOES_FOR_ONE_ORC, -1, 0);
 }
 
 function advanceToNextDay ()
