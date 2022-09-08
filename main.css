@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans";
+}
+
+a {
+    color: #be7ff5;
+}
+
+a:hover {
+    color: #d7acfc;
+}
+
+header {
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    padding: 20px 50px 20px 50px;
+    color: white;
+    background-color: black;
+}
+
+header h1 {
+    font-size: 50pt;
+    font-style: bold;
+    display: inline-block;
+    padding: 25px 50px 5px 50px;
+    margin: 8px;
+    border: 6px dotted white;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.subtitle {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.subtitle p {
+    margin: 5px;
+}
+
+
+section {
+    transition: all 0.5s ease-in;
+}
+
+
+#intro-screen {
+    margin: 0 auto 0 auto;
+    width: 400px;
+    padding: 15px 50px 10px 50px;
+    border: 4px dotted black;
+    border-radius: 20px;
+    transition: display 1s;
+}
+
+#intro-screen div {
+    text-align: center;
+}
+
+
+
+#scores-screen {
+    display: none;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    padding: 15px 50px 10px 50px;
+    border: 4px dotted black;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+#scores-screen table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+#scores-screen p {
+    margin: 6px 0 0 0;
+    vertical-align: middle;
+}
+
+#scores-screen th {
+    text-align: right;
+}
+
+#scores-screen tr {
+    width: 100%;
+}
+
+#scores-screen td {
+    width: 100%;
+    padding: 0;
+    background: repeating-linear-gradient(
+        to right,
+        grey 0%,
+        grey 0.8%,
+        transparent 0.8%,
+        transparent 9.2%,
+        grey 9.2%,
+        grey 10%
+    );
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#scores-screen td div {
+    min-height: 22px;
+}
+
+.destiny {
+    background-color: #fcba03;
+}
+
+.potatoes {
+    background-color: #9ac900;
+}
+
+.orcs {
+    background-color: #d10a00;
+}
+
+#destiny-score {
+    background-color: #fcba03;
+    width: 0%;
+    transition: width 0.8s ease-out;
+}
+
+#potatoes-score {
+    background-color: #9ac900;
+    width: 0%;
+    transition: width 0.8s ease-out;
+}
+
+#orcs-score {
+    background-color: #d10a00;
+    width: 0%;
+    transition: width 0.8s ease-out;
+}
+
+
+#game-screen {
+    display: none;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    padding: 15px 50px 10px 50px;
+    border: 4px dotted black;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+#controls {
+    display: none;
+    margin: 0 auto 0 auto;
+    width: 400px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+
+button {
+    font-family: "Josefin Sans";
+    background: white;
+    border: 4px dashed black;
+    padding: 10px;
+    border-radius: 20px;
+    width: 170px;
+}
+
+button:hover:enabled {
+    background-color: #be7ff5;
+    cursor: pointer;
+}
+
+button:active:enabled {
+    background-color: #9565bf;
+    cursor: pointer;
+}
