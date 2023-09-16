@@ -1,0 +1,115 @@
+{
+    "events": {
+        "garden": {
+            "title": "In the Garden...",
+            "incidents": [
+                {
+                    "destiny": 0,
+                    "potatoes": 1,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "You happily root about all day in your garden."
+                },
+                {
+                    "destiny": 1,
+                    "potatoes": 1,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "You narrowly avoid a visitor by hiding in a potato sack."
+                },
+                {
+                    "destiny": 1,
+                    "potatoes": 0,
+                    "orcs": 1,
+                    "potatoes_for_one_orc": 0,
+                    "message": "A hooded stranger lingers outside your farm."
+                },
+                {
+                    "destiny": 0,
+                    "potatoes": -1,
+                    "orcs": 1,
+                    "potatoes_for_one_orc": 0,
+                    "message": "Your field is ravaged in the night by unseen enemies."
+                },
+                {
+                    "destiny": 0,
+                    "potatoes": -1,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "You trade potatoes for other delicious foodstuffs."
+                },
+                {
+                    "destiny": 0,
+                    "potatoes": 2,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "You burrow into a bumper crop of potatoes. Do you cry with joy? Possibly."
+                }
+            ]
+        },
+        "knock": {
+            "title": "A Knock at the Door...",
+            "incidents": [
+                {
+                    "destiny": 0,
+                    "potatoes": 0,
+                    "orcs": 1,
+                    "potatoes_for_one_orc": 0,
+                    "message": "A distant cousin. They are after your potatoes. They may snitch on you."
+                },
+                {
+                    "destiny": 1,
+                    "potatoes": 0,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "A dwarven stranger. You refuse them entry. Ghastly creatures."
+                },
+                {
+                    "destiny": 1,
+                    "potatoes": 0,
+                    "orcs": 1,
+                    "potatoes_for_one_orc": 0,
+                    "message": "A wizard strolls by. You pointedly draw the curtains."
+                },
+                {
+                    "destiny": 0,
+                    "potatoes": -1,
+                    "orcs": 2,
+                    "potatoes_for_one_orc": 0,
+                    "message": "There are rumours of war in the reaches. You eat some potatoes."
+                },
+                {
+                    "destiny": 1,
+                    "potatoes": 0,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "It's an elf. They are not serious people."
+                },
+                {
+                    "destiny": 0,
+                    "potatoes": 2,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 0,
+                    "message": "It's a sack of potatoes from a generous neighbour. You really must remember to pay them a visit one of these years."
+                }
+            ]
+        },
+        "mud": {
+            "title": "Grass and Mud...",
+            "incidents": [
+                {
+                    "destiny": 0,
+                    "potatoes": 0,
+                    "orcs": 0,
+                    "potatoes_for_one_orc": 1,
+                    "message": "The world becomes a darker, more dangerous place. From now on, removing one ORC costs an additional POTATO."
+                }
+            ]
+        }
+    },
+    "endgames": {
+        "destiny": "An interfering bard or wizard turns up at your doorstep with a quest, and you are whisked away against your will on an adventure.",
+        "potatoes": "You have enough potatoes that you can go underground and not return to the surface until the danger is past. You nestle down into your burrow and enjoy your well earned rest.",
+        "orcs": "Orcs finally find your potato farm. Alas, orcs are not so interested in potatoes as they are in eating you, and you end up in a cookpot."
+    }
+}

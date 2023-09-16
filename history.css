@@ -1,0 +1,77 @@
+body {
+    height: unset;
+}
+
+main {
+    display: block;
+    max-height: unset;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+section {
+    width: 80%;
+}
+
+#play-again-btn {
+    display: block;
+    height: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+#history {
+    margin: 0 auto 0 auto;
+}
+
+#controls {
+    display: block;
+    padding: 50px 0 50px 0;
+}
+
+.move, .stats {
+    text-align: center;
+}
+
+.move {
+    font-style: italic;
+    font-weight: bold;
+    margin: 20px auto 20px auto;
+}
+
+.stats p, .incident p {
+    margin: 5px auto 5px auto;
+}
+
+.incident {
+    margin: 20px auto 20px auto;
+}
+
+.destiny-score, .potatoes-score, .orcs-score {
+    padding: 5px 5px 2px 5px;
+    color: white;
+}
+
+.destiny-score, .destiny {
+    background-color: #fcba03;
+}
+
+.potatoes-score, .potatoes {
+    background-color: #9ac900;
+}
+
+.orcs-score, .orcs{
+    background-color: #d10a00;
+}
+
+.deltas {
+    font-style: italic;
+}
+
+#endgame {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
