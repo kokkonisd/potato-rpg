@@ -168,6 +168,12 @@ function parseHistory (historyString) {
                 orcs += incident_data.orcs;
                 potatoes_for_one_orc += incident_data.potatoes_for_one_orc;
 
+                // Make sure values stay within range.
+                if (destiny < 0) destiny = 0;
+                if (potatoes < 0) potatoes = 0;
+                if (orcs < 0) orcs = 0;
+                if (potatoes_for_one_orc < 0) potatoes_for_one_orc = 0;
+
                 historySection.append(stats(destiny, potatoes, orcs, potatoes_for_one_orc));
                 break;
             default:
