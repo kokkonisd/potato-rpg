@@ -8,60 +8,62 @@
         <script src="main.js"></script>
     </head>
     <body>
-        <header>
-            <h1> POTATO </h1>
-            <div class="subtitle">
+        <main>
+            <header>
+                <h1> POTATO </h1>
+                <div class="subtitle">
+                    <p>
+                        A one page RPG by
+                        <a href="https://twitter.com/deathbybadger">Oliver Darkshire</a>
+                    </p>
+                    <p>
+                        Implemented by <a href="https://kokkonisd.github.io/">kokkonisd</a>
+                    </p>
+            </header>
+
+            <section id="intro-screen">
+                <p>you are a halfling, just trying to exist</p>
+                <p>meanwhile, the dark lord rampages accross the world</p>
+                <p>you do not care about this, you are trying to farm potatoes</p>
+                <p>because what could a halfling possibly do about it anyway</p>
+                <div><button id="start-game-btn">start game</button></div>
+            </section>
+
+            <section id="scores-screen">
+                <table>
+                    <tr>
+                        <th><p>DESTINY</p></th>
+                        <td><div id="destiny-score"></div></td>
+                    </tr>
+                    <tr>
+                        <th><p>POTATOES</p></th>
+                        <td><div id="potatoes-score"></div></td>
+                    </tr>
+                    <tr>
+                        <th><p>ORCS</p></th>
+                        <td><div id="orcs-score"></div></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="game-screen">
                 <p>
-                    A one page RPG by
-                    <a href="https://twitter.com/deathbybadger">Oliver Darkshire</a>
-                </p> 
-                <p>
-                    Implemented by <a href="https://kokkonisd.github.io/">kokkonisd</a>
+                    Your goal is to maximize your potatoes, while keeping destiny &amp;
+                    orcs low.
                 </p>
-        </header>
+                <p>Let the adventure begin! Click "advance to next day" below.</p>
+            </section>
 
-        <section id="intro-screen">
-            <p>you are a halfling, just trying to exist</p>
-            <p>meanwhile, the dark lord rampages accross the world</p>
-            <p>you do not care about this, you are trying to farm potatoes</p>
-            <p>because what could a halfling possibly do about it anyway</p>
-            <div><button id="start-game-btn">start game</button></div>
-        </section>
-
-        <section id="scores-screen">
-            <table>
-                <tr>
-                    <th><p>DESTINY</p></th>
-                    <td><div id="destiny-score"></div></td>
-                </tr>
-                <tr>
-                    <th><p>POTATOES</p></th>
-                    <td><div id="potatoes-score"></div></td>
-                </tr>
-                <tr>
-                    <th><p>ORCS</p></th>
-                    <td><div id="orcs-score"></div></td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="game-screen">
-            <p>
-                Your goal is to maximize your potatoes, while keeping destiny &amp;
-                orcs low.
-            </p>
-            <p>Let the adventure begin! Click "advance to next day" below.</p>
-        </section>
-
-        <section id="controls">
-            <div>
-                <button id="trade-btn" disabled>
-                    Trade <span id="trade-amount">1</span> POTATO to remove 1 ORC
-                </button>
-            </div>
-            <div>
-                <button id="advance-btn">Advance to the next day</button>
-            </div>
-        </section>
+            <section id="controls">
+                <div>
+                    <button id="trade-btn" disabled>
+                        Trade <span id="trade-amount">1</span> POTATO to remove 1 ORC
+                    </button>
+                </div>
+                <div>
+                    <button id="advance-btn">Advance to the next day</button>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

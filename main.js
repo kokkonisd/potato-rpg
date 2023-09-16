@@ -19,7 +19,20 @@ function updateScores (destiny, potatoes, orcs, potatoes_for_one_orc)
     let new_potatoes = POTATOES + potatoes;
     let new_orcs = ORCS + orcs;
 
-    POTATOES_FOR_ONE_ORC += potatoes_for_one_orc;
+    if (potatoes_for_one_orc != 0) {
+        POTATOES_FOR_ONE_ORC += potatoes_for_one_orc;
+
+        // Make the trade button and the trade amount animate to notify the player of
+        // the change.
+        // In order to be sure to trigger the animation every time, use this hack:
+        // https://stackoverflow.com/a/63561659/2517239
+        tradeAmount.classList.remove("modified");
+        tradeBtn.classList.remove("modified");
+        tradeAmount.offsetWidth;
+        tradeBtn.offsetWidth;
+        tradeAmount.classList.add("modified");
+        tradeBtn.classList.add("modified");
+    }
 
     const endGame = document.createElement("p");
 
