@@ -1,4 +1,9 @@
-import GAME_DATA from "./data.json" assert { type: "json" }
+// Load the JSON data from the file.
+// Yes, this is kind of silly, but it's the cross-platform(TM) way.
+let request = new XMLHttpRequest();
+request.open("GET", "data.json", false);
+request.send(null)
+let GAME_DATA = JSON.parse(request.responseText);
 
 function playerMove (message) {
     let p = document.createElement("p");
